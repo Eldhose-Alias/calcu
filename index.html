@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<style>
+    body{
+        background-color: black;
+    }
+    p{
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        color: darkcyan;
+    }
+.p-3{
+margin-left: 21px;
+width:90%;
+}
+.btn{
+    height: 50px;
+    width:16%;
+    font-size: medium;
+}
+.reset{
+    width:38%;
+}
+</style>
+</head>
+<body>
+    <div class="row mt-5">
+       <div class="col-lg-4 col-md-4"></div>
+       <div class="col-lg-4 col-md-6   border border-dark fw-bolder rounded-5 bg-light"> 
+        <p class="fs-1  w-50 container">Calculator</p>
+        <input id="result" type="text" class="border border-dark rounded-2 p-3">
+
+        <div>
+            <button onclick="display(7)" class="btn btn-outline-info mt-5 ms-5"> 7</button>
+            <button onclick="display(8)" class="btn btn-outline-warning mt-5 ms-4"> 8</button>
+            <button onclick="display(9)" class="btn btn-outline-info mt-5 ms-4"> 9</button>
+            <button onclick=allclear() class="btn btn-outline-warning mt-5 ms-4"> del</button>
+
+            <button onclick="display(4)" class="btn btn-outline-info mt-4 ms-5"> 4</button>
+            <button onclick="display(5)" class="btn btn-outline-warning mt-4 ms-4"> 5</button>
+            <button onclick="display(6)" class="btn btn-outline-info mt-4 ms-4"> 6</button>
+            <button onclick="display('+')" class="btn btn-outline-warning mt-4 ms-4"> +</button>
+
+            <button onclick="display(1)" class="btn btn-outline-info mt-4 ms-5"> 1</button> 
+            <button onclick="display(2)" class="btn btn-outline-warning mt-4 ms-4"> 2</button>
+            <button onclick="display(3)" class="btn btn-outline-info mt-4 ms-4"> 3</button>
+            <button onclick="display('-')" class="btn btn-outline-warning mt-4 ms-4"> -</button>
+
+            <button onclick="display('.')" class="btn btn-outline-info mt-4 ms-5 "> .</button> 
+            <button onclick="display(0)" class="btn btn-outline-warning mt-4 ms-4 "> 0</button>
+            <button onclick="display('/')" class="btn btn-outline-info mt-4 ms-4 "> /</button>
+            <button onclick="display('*')" class="btn btn-outline-warning mt-4 ms-4 "> *</button>
+
+            <button onclick="allclear()" type="reset" class="reset btn btn-outline-warning mt-5 ms-4 mb-5"> reset</button> 
+            <button onclick="evaluateexp()" class="reset btn btn-outline-info mt-4 ms-4 mb-4"> =</button>
+
+        </div>
+
+       </div>
+       <div class="col-lg-4 col-md-4"></div>
+    </div>
+</body>
+<script src="./calc.js">
+        
+</script>
+</html>
